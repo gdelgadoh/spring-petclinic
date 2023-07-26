@@ -17,7 +17,7 @@ jobs:
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
       - name: Set up Azure CLI
-        uses: azure/setup-azure-cli@v1
+        uses: azure/CLI@v1
       - name: Deploy to Azure Spring Cloud
         run: |
           az spring app deploy \
