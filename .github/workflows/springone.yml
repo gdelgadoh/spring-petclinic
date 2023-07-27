@@ -27,8 +27,13 @@ jobs:
         with:
           inlineScript: |
             az spring app deploy \
-              --resource-group springoneent \
-              --service springoneent \
-              --name springone \
-              --builder springone \
+              --resource-group ${{ env.RESOURCE_GROUP }} \
+              --service ${{ env.SERVICE }} \
+              --name ${{ env.APP_NAME }} \
+              --builder ${{ env.BUILDER }} \
               --artifact-path target/spring-petclinic-3.1.0-SNAPSHOT.jar
+        env:
+          RESOURCE_GROUP: springoneent
+          SERVICE: springoneent
+          APP_NAME: springone
+          BUILDER: springone
