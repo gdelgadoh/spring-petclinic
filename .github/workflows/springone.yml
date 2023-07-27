@@ -1,4 +1,4 @@
-name: Deploy to Azure Spring Apps
+name: Deploy to Azure Spring Cloud
 
 on:
   push:
@@ -18,11 +18,14 @@ jobs:
           cache: maven
       - name: Build with Maven
         run: mvn package -DskipTests
+      - name: Store JAR file name
+        run: echo "::set-output name=jar-file::$(ls target/*.jar)"
+        id: jar-file
       - name: Azure Login
         uses: azure/login@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
-      - name: Deploy to Azure Spring Apps
+      - name: Deploy to Azure Spring Cloud
         uses: azure/CLI@v1
         with:
           inlineScript: |
@@ -31,7 +34,7 @@ jobs:
               --service ${{ env.SERVICE }} \
               --name ${{ env.APP_NAME }} \
               --builder ${{ env.BUILDER }} \
-              --artifact-path target/spring-petclinic-3.1.0-SNAPSHOT.jar
+              --artifact-path ${{ steps.jar-file.outputs.jar-file }}
         env:
           RESOURCE_GROUP: springoneent
           SERVICE: springoneent
