@@ -1,4 +1,4 @@
-name: Deploy to Azure Spring Cloud
+name: Deploy to Azure Spring Apps
 
 on:
   push:
@@ -22,7 +22,7 @@ jobs:
         uses: azure/login@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
-      - name: Deploy to Azure Spring Cloud
+      - name: Deploy to Azure Spring Apps
         uses: azure/CLI@v1
         with:
           inlineScript: |
