@@ -27,8 +27,8 @@ jobs:
       - name: Run tests
         run: mvn test
       - name: Store JAR file name
-        run: echo "::set-output name=jar-file::$(ls target/*.jar)"
         id: jar-file
+        run: echo $(ls target/*.jar) >> $GITHUB_ENV
       - name: Azure Login
         uses: azure/login@v1
         with:
@@ -42,9 +42,10 @@ jobs:
               --service ${{ env.SERVICE }} \
               --name ${{ env.APP_NAME }} \
               --builder ${{ env.BUILDER }} \
-              --artifact-path ${{ steps.jar-file.outputs.jar-file }}
+              --artifact-path ${{ env.JAR_FILE }}
         env:
           RESOURCE_GROUP: springoneent
           SERVICE: springoneent
           APP_NAME: springone
           BUILDER: springone
+          JAR_FILE: ${{ steps.jar-file.outputs.jar-file }}
