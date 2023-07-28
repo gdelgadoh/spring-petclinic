@@ -23,10 +23,10 @@ jobs:
           key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-maven-          
       - name: Build with Maven
-        run: mvn -B package -DskipTests --file pom.xml
+        run: mvn package -DskipTests
       - name: Store JAR file name
+        run: echo "::set-output name=jar-file::$(ls target/*.jar)"
         id: jar-file
-        run: echo $(find target -name "*.jar" -type f -printf "%f\n") >> $GITHUB_ENV
       - name: Azure Login
         uses: azure/login@v1
         with:
@@ -40,10 +40,9 @@ jobs:
               --service ${{ env.SERVICE }} \
               --name ${{ env.APP_NAME }} \
               --builder ${{ env.BUILDER }} \
-              --artifact-path ${{ env.JAR_FILE }}
+              --artifact-path ${{ steps.jar-file.outputs.jar-file }}
         env:
           RESOURCE_GROUP: springoneent
           SERVICE: springoneent
           APP_NAME: springone
           BUILDER: springone
-          JAR_FILE: ${{ steps.jar-file.outputs.jar-file }}
