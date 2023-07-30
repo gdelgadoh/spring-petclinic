@@ -34,7 +34,7 @@ jobs:
       - name: Get Subscription ID
         run: |
           subscription_id=$(az account show --query 'id' -o tsv)
-          echo "::set-output name=AZURE_SUBSCRIPTION::$subscription_id"
+          echo "::set-output name=subscription_id::$subscription_id"
         id: subscription
       - name: Deploy to Azure Spring Apps
         uses: azure/spring-apps-deploy@v1
