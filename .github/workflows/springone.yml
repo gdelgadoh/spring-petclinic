@@ -31,6 +31,10 @@ jobs:
         uses: azure/login@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
+      - name: Get Subscription ID
+        run: |
+          subscription_id=$(az account show --query 'id' -o tsv)
+          echo "::set-env name=AZURE_SUBSCRIPTION::$subscription_id"
       - name: Deploy to Azure Spring Apps
         uses: azure/spring-apps-deploy@v1
         with:
@@ -40,6 +44,7 @@ jobs:
           package: ${{ steps.jar-file.outputs.jar-file }}
           builder: ${{ env.BUILDER }}
         env:
+          AZURE_SUBSCRIPTION: ${{ env.AZURE_SUBSCRIPTION }}
           RESOURCE_GROUP: springoneent
           SERVICE: springoneent
           APP_NAME: springone
