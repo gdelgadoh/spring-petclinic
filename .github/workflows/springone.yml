@@ -53,8 +53,9 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: app
+        id: download
       - name: Get JAR file name
-        run: echo "::set-output name=jar-file::$(ls app/*.jar)"
+        run: echo "::set-output name=jar-file::$(ls ${{ steps.download.outputs.download-path }}/*.jar)"
         id: get-jar
       - name: Azure Login
         uses: azure/login@v1
@@ -71,7 +72,7 @@ jobs:
           azure-subscription: ${{ steps.subscription.outputs.subscription_id }}
           service-name: ${{ env.SERVICE }}
           app-name: ${{ env.APP_NAME }}
-          package: app/${{ steps.get-jar.outputs.jar-file }}
+          package: ${{ steps.get-jar.outputs.jar-file }}
           builder: ${{ env.BUILDER }}
           action: deploy
           use-staging-deployment: false
