@@ -5,7 +5,9 @@ Check
   Scan dependencies for CVEs with Redhat dependency analyzer
   
 Migrate
-  openrewrite receipes from spring boot language server
+ explain openrewrite receipes from spring boot language server
+  3 levels down
+ Migrate
 
 Build
   mvn package
