@@ -12,7 +12,7 @@ Migrate
 Build
   mvn package
 
-Github action
+Github action (open springone.yml)
   CodeQL
   Introduce Tanzu build service with Java Azure Buildpack for VMware Tanzu https://network.tanzu.vmware.com/products/tanzu-java-azure-buildpack
   Sets up Microsoft OpenJDK 17 and builds the code.
@@ -20,11 +20,12 @@ Github action
     Rolled-out deployment
 
 Monitor
+  Open Azure spring Apps view
   Tanzu live view
   Spring dashboard connect live
     Beans
     Endpoint mapping
-  Debug live
+  Debug live with started node
 
 To create a Azure User for the action:
 az ad sp create-for-rbac --name springone --role contributor --scopes /subscriptions/<your sub>/resourceGroups/springoneent --sdk-auth
