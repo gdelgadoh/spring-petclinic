@@ -1,5 +1,6 @@
 Check
-  Open Pom - scan dependencies for CVEs
+  POM
+  Scan dependencies for CVEs with Redhat dependency analyzer
   
 Migrate
   openrewrite receipes from spring boot language server
@@ -8,11 +9,13 @@ Build
   mvn package
 
 Github action
-  Introduce Tanzu build service with buildpacks to deploy to Azure Spring Apps
+  CodeQL
+  Introduce Tanzu build service with buildpacks
+  Deploy to Azure Spring Apps
+    Java Azure Buildpack for VMware Tanzu https://network.tanzu.vmware.com/products/tanzu-java-azure-buildpack
   Sets up Microsoft OpenJDK 17 and builds the code.
   Deploy with azure/spring-apps-deploy action and .
   Rolled-out deployment
-  CodeQL
 
 Monitor
   Tanzu live view
