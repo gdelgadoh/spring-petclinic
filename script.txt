@@ -1,0 +1,24 @@
+Check
+  Open Pom - scan dependencies for CVEs
+  
+Migrate
+  openrewrite receipes from spring boot language server
+
+Build
+  mvn package
+
+Github action
+  Introduce Tanzu build service with buildpacks to deploy to Azure Spring Apps
+  Sets up Microsoft OpenJDK 17 and builds the code.
+  Deploy with azure/spring-apps-deploy action and .
+  Rolled-out deployment
+  CodeQL
+
+Monitor
+  Tanzu live view
+  Spring dashboard connect live
+    Beans
+    Endpoint mapping
+  Debug live
+
+az ad sp create-for-rbac --name springone --role contributor --scopes /subscriptions/<your sub>/resourceGroups/springoneent --sdk-auth
