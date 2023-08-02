@@ -15,8 +15,8 @@ Build
 Github action (open springone.yml)
   CodeQL
   Introduce Tanzu build service with Java Azure Buildpack for VMware Tanzu https://network.tanzu.vmware.com/products/tanzu-java-azure-buildpack
-  Sets up Microsoft OpenJDK 17 and builds the code.
-  Deploy to Azure Spring Apps
+  Sets-up Microsoft OpenJDK 17 and builds the code.
+  Commit and Deploy to Azure Spring Apps
     Rolled-out deployment
 
 Monitor
