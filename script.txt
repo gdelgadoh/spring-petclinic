@@ -1,63 +1,52 @@
 Introduction to Visual Studio Code
 
-Spring boot extension pack
-  extensions part of the pack 
+Spring Boot Extension Pack
+- Extensions included in the pack
 
-Inner loop Demo
+Inner Loop Demo
+- Getting Started
+  - Spring Initializr integration
+  - Use Spring Petclinic from Getting Started guide
+- Spring Tooling
+  - Run the application and access it through the code lenses
+  - Refresh Live Process connection to update IDE with metrics
+  - Code navigation, project symbols
+  - Show live Hovers
+- Debugging
+  - Show debugging flow and hot code replace
+- Spring Boot Dashboard
+  - Show beans, mappings, memory views
+  - Talk about Spring Boot auto-configuration insights
+- Testing
+  - JUnit Test runner to execute tests without leaving the IDE
+- (Optional) Talk about Spring validations - best practices while coding
+- Summarize the end-to-end Spring development experience
 
-  Getting started
-    Spring Initializr integration
-    Use Spring petclinic from getting started guide
-
-  Spring Tooling
-    Run the application and access it through the code lenses
-    Refresh Live Process connection to update IDE with metrics
-    Code navigation, project symbols
-    Show live Hovers
-
-  Debugging
-    Show debugging flow and hot code replace 
-
-  Spring boot dashboard
-    Show beans, mappings, memory views
-    Talk about Spring boot auto-configuration insights
-
-  Testing
-    JUnit Test runner to execute tests without leaving the IDE
-
-  (optional) Talk about Spring validations - best practices while coding
-  Summerize the end to end spring development experiance 
-
-Outer loop Demo
-
-Check
-  POM
-  Scan dependencies for CVEs with Redhat dependency analyzer
-  
-Migrate
- explain openrewrite receipes from spring boot language server
-  3 levels down
- Migrate
- (optional) Show validations for best practices 
-
-Build
-  mvn package
-
-Github action (open springone.yml)
-  CodeQL
-  Introduce Tanzu build service with Java Azure Buildpack for VMware Tanzu https://network.tanzu.vmware.com/products/tanzu-java-azure-buildpack
-  Sets-up Microsoft OpenJDK 17 and builds the code.
-  Commit and Deploy to Azure Spring Apps
-    Rolled-out deployment
-
-Monitor
-  Open Azure spring Apps view
-  Tanzu live view
-  Spring dashboard connect live
-    Beans
-    Endpoint mapping
-  Debug live with started node
+Outer Loop Demo
+- Check
+  - POM
+  - Scan dependencies for CVEs with Redhat dependency analyzer
+- Migrate
+  - Explain openrewrite recipes from Spring Boot language server
+  - 3 levels down
+  - Migrate
+  - (Optional) Show validations for best practices
+- Build
+  - `mvn package`
+- GitHub Action (open springone.yml)
+  - CodeQL
+  - Introduce Tanzu build service with Java Azure Buildpack for VMware Tanzu https://network.tanzu.vmware.com/products/tanzu-java-azure-buildpack
+  - Sets up Microsoft OpenJDK 17 and builds the code
+  - Commit and deploy to Azure Spring Apps
+  - Rolled-out deployment
+- Monitor
+  - Open Azure Spring Apps view
+  - Tanzu live view
+  - Spring dashboard connect live
+    - Beans
+    - Endpoint mapping
+  - Debug live with started node
 
 Appendix:
-To create a Azure User for the action:
-az ad sp create-for-rbac --name springone --role contributor --scopes /subscriptions/<your sub>/resourceGroups/springoneent --sdk-auth
+- To create an Azure User for the action:
+  - `az ad sp create-for-rbac --name springone --role contributor --scopes /subscriptions/<your sub>/resourceGroups/springoneent --sdk-auth`
