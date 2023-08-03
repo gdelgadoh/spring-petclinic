@@ -30,7 +30,7 @@ Outer Loop Demo
   - Explain openrewrite recipes from Spring Boot language server
   - 3 levels down
   - Migrate
-  - (Optional) Show validations for best practices
+  - (Optional) Show validations for best practices using openrewrite
 - Build
   - `mvn package`
 - GitHub Action (open springone.yml)
