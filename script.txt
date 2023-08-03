@@ -1,3 +1,5 @@
+Inner loop Demo
+
 Outer loop Demo
 
 Check
@@ -27,5 +29,6 @@ Monitor
     Endpoint mapping
   Debug live with started node
 
+Appendix:
 To create a Azure User for the action:
 az ad sp create-for-rbac --name springone --role contributor --scopes /subscriptions/<your sub>/resourceGroups/springoneent --sdk-auth
