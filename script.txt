@@ -46,6 +46,7 @@ Outer Loop Demo
     - Beans
     - Endpoint mapping
   - Debug live with started node
+  - (Optional) Azure monitor APM
 
 Appendix:
 - To create an Azure User for the action:
