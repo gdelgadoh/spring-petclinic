@@ -1,4 +1,33 @@
+Introduction to Visual Studio Code
+
+Introduction to Spring boot extension pack
+  Brief intro to extensions part of the pack 
+
 Inner loop Demo
+
+  Getting started
+    Spring Initializr integration
+    Use Spring petclinic from getting started guide
+
+  Spring Tooling
+    Run the application and access it through the code lenses
+    Refresh Live Process connection to update IDE with metrics
+    Code navigation, project symbols
+    Show live Hovers
+
+  Debugging
+    Show debugging flow and hot code replace 
+
+  Spring boot dashboard
+    Show beans, mappings, memory views
+    Talk about Spring boot auto-configuration insights
+
+  Testing
+    JUnit Test runner to execute tests without leaving the IDE
+
+  (optional) Talk about Spring validations - best practices while coding
+  Summerize the end to end spring development experiance 
+
 
 Outer loop Demo
 
@@ -10,6 +39,7 @@ Migrate
  explain openrewrite receipes from spring boot language server
   3 levels down
  Migrate
+ (optional) Show validations for best practices 
 
 Build
   mvn package
