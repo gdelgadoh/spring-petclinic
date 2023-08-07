@@ -35,7 +35,7 @@ Outer Loop Demo
   - Migrate
   - (Optional) Show validations for best practices using openrewrite
 - Build
-  - `mvn package`
+  - `mvn package -DskipTests`
 - GitHub Action (open springone.yml)
   - Sets up Microsoft OpenJDK 17 and builds the code
   - Introduce Tanzu build service 
