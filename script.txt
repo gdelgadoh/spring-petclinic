@@ -43,6 +43,8 @@ Outer Loop Demo
   - Introduce Tanzu build service 
   - Rolled-out deployment
 
+-Q&A
+
 Appendix:
 To create an Azure User for the action:
   - `az ad sp create-for-rbac --name springone --role contributor --scopes /subscriptions/<your sub>/resourceGroups/springoneent --sdk-auth`
