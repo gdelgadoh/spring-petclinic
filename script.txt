@@ -40,13 +40,12 @@ Outer Loop Demo
   - Commit and deploy to Azure Spring Apps
   - Rolled-out deployment
 - Monitor
-  - Open Azure Spring Apps view
+  - Open Azure Spring Apps extension
   - Tanzu live view
   - Spring dashboard connect live
     - Beans
     - Endpoint mapping
   - Debug live with started node
-  - (Optional) Azure monitor APM
 
 Appendix:
 - To create an Azure User for the action:
