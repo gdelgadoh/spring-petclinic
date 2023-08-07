@@ -23,22 +23,6 @@ Inner Loop Demo
 - Summarize the end-to-end Spring development experience
 
 Outer Loop Demo
-- Check
-  - POM
-  - Scan dependencies for CVEs with Redhat dependency analyzer
-- Migrate
-  - Explain openrewrite recipes from Spring Boot language server
-  - 3 levels down
-  - Migrate
-  - (Optional) Show validations for best practices using openrewrite
-- Build
-  - `mvn package`
-- GitHub Action (open springone.yml)
-  - CodeQL
-  - Introduce Tanzu build service with Java Azure Buildpack for VMware Tanzu https://network.tanzu.vmware.com/products/tanzu-java-azure-buildpack
-  - Sets up Microsoft OpenJDK 17 and builds the code
-  - Commit and deploy to Azure Spring Apps
-  - Rolled-out deployment
 - Monitor
   - Open Azure Spring Apps extension
   - Tanzu live view
@@ -46,7 +30,20 @@ Outer Loop Demo
     - Beans
     - Endpoint mapping
   - Debug live with started node
+- Migrate
+  - Explain openrewrite recipes from Spring Boot language server (3 levels down)
+  - Migrate
+  - (Optional) Show validations for best practices using openrewrite
+- Build
+  - `mvn package`
+- GitHub Action (open springone.yml)
+  - Sets up Microsoft OpenJDK 17 and builds the code
+  - Introduce Tanzu build service 
+  - Commit and deploy to Azure Spring Apps
+  - Rolled-out deployment
 
 Appendix:
 - To create an Azure User for the action:
   - `az ad sp create-for-rbac --name springone --role contributor --scopes /subscriptions/<your sub>/resourceGroups/springoneent --sdk-auth`
+Extension
+https://network.tanzu.vmware.com/products/tanzu-java-azure-buildpack
