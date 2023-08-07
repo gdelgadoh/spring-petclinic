@@ -43,7 +43,7 @@ Outer Loop Demo
   - Rolled-out deployment
 
 Appendix:
-- To create an Azure User for the action:
+To create an Azure User for the action:
   - `az ad sp create-for-rbac --name springone --role contributor --scopes /subscriptions/<your sub>/resourceGroups/springoneent --sdk-auth`
 Extension
 https://network.tanzu.vmware.com/products/tanzu-java-azure-buildpack
