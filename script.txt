@@ -37,10 +37,13 @@ Outer Loop Demo
 - Build
   - `mvn package -DskipTests`
 - GitHub Action (open springone.yml)
+  - Commit and deploy to Azure Spring Apps
+  Explain the action:
   - Sets up Microsoft OpenJDK 17 and builds the code
   - Introduce Tanzu build service 
-  - Commit and deploy to Azure Spring Apps
   - Rolled-out deployment
+
+-Q&A
 
 Appendix:
 To create an Azure User for the action:
