@@ -23,6 +23,7 @@ Inner Loop Demo
 - Summarize the end-to-end Spring development experience
 
 Outer Loop Demo
+Codespaces
 - Monitor
   - Open Azure Spring Apps extension
   - Tanzu live view
@@ -30,7 +31,7 @@ Outer Loop Demo
     - Beans
     - Endpoint mapping
   - Debug live with started node
-- Migrate
+- Migrate - command -  "upgrade spring boot version"
   - Explain openrewrite recipes from Spring Boot language server (3 levels down)
   - Migrate
   - (Optional) Show validations for best practices using openrewrite
