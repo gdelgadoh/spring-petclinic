@@ -23,26 +23,29 @@ Inner Loop Demo
 - Summarize the end-to-end Spring development experience
 
 Outer Loop Demo
-Codespaces
-- Monitor
+
+EXPLAIN Codespaces
+- MONITOR
   - Open Azure Spring Apps extension
   - Tanzu live view
   - Spring dashboard connect live
     - Beans
     - Endpoint mapping
-  - Debug live with started node
-- Migrate - command -  "upgrade spring boot version"
-  - Explain openrewrite recipes from Spring Boot language server (3 levels down)
-  - Migrate
-  - (Optional) Show validations for best practices using openrewrite
+- DEBUG
+- MIGRATE 
+  - command -  "upgrade spring boot version"
+    - Explain openrewrite recipes from Spring Boot language server (3 levels down)
+  - MIGRATE
+  - COMMIT
+    - (Optional) Show validations for best practices using openrewrite
 - Build
   - `mvn package -DskipTests`
-- GitHub Action (open springone.yml)
-  - Commit and deploy to Azure Spring Apps
-  Explain the action:
-  - Sets up Microsoft OpenJDK 17 and builds the code
-  - Introduce Tanzu build service 
-  - Rolled-out deployment
+- DEPLOY (open springone.yml)
+    Explain the action:
+    - Sets up Microsoft
+    - Builds the Jar
+    - Introduce Tanzu build service 
+    - Rolled-out deployment
 
 -Q&A
 
