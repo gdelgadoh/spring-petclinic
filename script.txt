@@ -26,7 +26,6 @@ Outer Loop Demo
 
 - MONITOR
  - EXPLAIN Codespaces
-  - OPEN "Azure Spring Apps extension"
   - OPEN "Application Live View"
   - OPEN "View Live Information"
    - OPEN OwnerController.java
@@ -40,12 +39,11 @@ Outer Loop Demo
     - EXPLAIN openrewrite recipes from Spring Boot language server (3 levels down)
         - (Optional) Show validations for best practices using openrewrite
   - MIGRATE
-  - COMMIT
-  - Build
+    - Build
     - `mvn package -DskipTests`
+  - COMMIT
 - DEPLOY 
-  - OPEN springone.yml
-    EXPLAIN
+    EXPLAIN springone.yml
     - BUILD
     - Containerize
     - ROLL-OUT
