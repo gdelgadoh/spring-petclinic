@@ -24,31 +24,31 @@ Inner Loop Demo
 
 Outer Loop Demo
 
-EXPLAIN Codespaces
 - MONITOR
-  - Open Azure Spring Apps extension
-  - Tanzu live view
-  - Spring dashboard connect live
-    - ">Spring boot: manage live spring boot process connections"
-     - Drill down
+ - EXPLAIN Codespaces
+  - OPEN "Azure Spring Apps extension"
+  - OPEN "Application Live View"
+  - OPEN "View Live Information"
+   - OPEN OwnerController.java
+    - REFRESH ">Spring boot: manage live spring boot process connections"
     - DEMO 
       - Beans
       - Endpoint mapping
   - DEBUG
 - MIGRATE 
-  - ">Spring boot: upgrade spring boot version"
-    - Explain openrewrite recipes from Spring Boot language server (3 levels down)
+  - OPEN ">Spring boot: upgrade spring boot version"
+    - EXPLAIN openrewrite recipes from Spring Boot language server (3 levels down)
+        - (Optional) Show validations for best practices using openrewrite
   - MIGRATE
   - COMMIT
-    - (Optional) Show validations for best practices using openrewrite
-- Build
-  - `mvn package -DskipTests`
-- DEPLOY (open springone.yml)
-    Explain the action:
-    - Sets up Microsoft
-    - Builds the Jar
-    - Introduce Tanzu build service 
-    - Rolled-out deployment
+  - Build
+    - `mvn package -DskipTests`
+- DEPLOY 
+  - OPEN springone.yml
+    EXPLAIN
+    - BUILD
+    - Containerize
+    - ROLL-OUT
 
 -Q&A
 
