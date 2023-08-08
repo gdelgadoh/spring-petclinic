@@ -29,11 +29,14 @@ EXPLAIN Codespaces
   - Open Azure Spring Apps extension
   - Tanzu live view
   - Spring dashboard connect live
-    - Beans
-    - Endpoint mapping
-- DEBUG
+    - ">Spring boot: manage live spring boot process connections"
+     - Drill down
+    - DEMO 
+      - Beans
+      - Endpoint mapping
+  - DEBUG
 - MIGRATE 
-  - command -  "upgrade spring boot version"
+  - ">Spring boot: upgrade spring boot version"
     - Explain openrewrite recipes from Spring Boot language server (3 levels down)
   - MIGRATE
   - COMMIT
