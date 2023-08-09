@@ -44,7 +44,7 @@ jobs:
         run: echo "::set-output name=jar-file::$(ls ${{ steps.download.outputs.download-path }}/*.jar)"
         id: get-jar
       - name: Azure Login
-        uses: azure/login@v1
+        uses: azure/login@v1.4.6
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
       - name: Get Subscription ID
