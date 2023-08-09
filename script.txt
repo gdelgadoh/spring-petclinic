@@ -33,18 +33,16 @@ Outer Loop Demo
       - Beans
       - Endpoint mapping
   - DEBUG
-- MIGRATE 
-  - OPEN ">Spring boot: upgrade spring boot version"
-    - EXPLAIN openrewrite recipes from Spring Boot language server (3 levels down)
+- MIGRATE
+    - MIGRATE ">Spring boot: upgrade spring boot version"
+     - EXPLAIN openrewrite recipes from Spring Boot language server (3 levels down)
         - (Optional) Show validations for best practices using openrewrite
-  - MIGRATE
-    - Build
-    - `mvn package -DskipTests`
-  - COMMIT
-- DEPLOY 
-    EXPLAIN springone.yml
     - BUILD
-    - Containerize
+    - `mvn package -DskipTests`
+    - COMMIT
+- DEPLOY - springone.yml
+    - BUILD
+    - CONTAINER
     - ROLL-OUT
 
 -Q&A
