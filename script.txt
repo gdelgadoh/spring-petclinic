@@ -35,12 +35,14 @@ Outer Loop Demo
   - DEBUG
 - MIGRATE
     - MIGRATE ">Spring boot: upgrade spring boot version"
+     - 1 settings
     - EXPLAIN openrewrite recipes from Spring Boot language server (3 levels down)
         - (Optional) Show validations for best practices using openrewrite
     - COMMIT
 - DEPLOY - springone.yml
     - BUILD
     - CONTAINER
+      - explain buildpacks
     - ROLL-OUT
 
 -Q&A
