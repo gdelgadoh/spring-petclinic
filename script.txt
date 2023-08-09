@@ -25,7 +25,6 @@ Inner Loop Demo
 Outer Loop Demo
 
 - MONITOR
- - EXPLAIN Codespaces
   - OPEN "Application Live View"
   - OPEN "View Live Information"
    - OPEN OwnerController.java
