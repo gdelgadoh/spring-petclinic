@@ -3,7 +3,7 @@ Introduction to Visual Studio Code
 Spring Boot Extension Pack
 - Extensions included in the pack
 
-Inner Loop Demo
+Inner Loop Demo 
 - Getting Started
   - Spring Initializr integration
   - Use Spring Petclinic from Getting Started guide
