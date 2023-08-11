@@ -39,7 +39,7 @@ Outer Loop Demo
     - EXPLAIN openrewrite recipes from Spring Boot language server (3 levels down)
         - (Optional) Show validations for best practices using openrewrite
     - COMMIT
-- DEPLOY - springone.yml
+- DEPLOY
     - BUILD
       - Microsoft openjdk
     - CONTAINER
