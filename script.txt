@@ -35,7 +35,6 @@ Outer Loop Demo
   - DEBUG
 - MIGRATE
     - MIGRATE ">Spring boot: upgrade spring boot version"
-     - show openrewrite settings
     - EXPLAIN openrewrite recipes from Spring Boot language server (3 levels down)
         - (Optional) Show validations for best practices using openrewrite
     - COMMIT
