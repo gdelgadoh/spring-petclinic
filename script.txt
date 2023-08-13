@@ -52,3 +52,51 @@ To create an Azure User for the action:
   - `az ad sp create-for-rbac --name springone --role contributor --scopes /subscriptions/<your sub>/resourceGroups/springoneent --sdk-auth`
 Extension
 https://network.tanzu.vmware.com/products/tanzu-java-azure-buildpack
+
+
+Rory Preddy's Talking Points:
+
+- Introduction
+  - Based in Johannesburg.
+  - Role as a Principal Cloud Advocate.
+  - Presentation focus: tools, tips, and tricks.
+
+- Special Promotions
+  - Mention of a golden ticket and nightclub booking.
+
+- DevOps Role and Responsibilities
+  - Tasks: Monitor, Migrate, and Deploy.
+  - Utilization of GitHub actions and buildpacks.io.
+  - Deployment strategy for Kubernetes clusters.
+
+- Reflections on Past Experience
+  - Evolution from manual Spring projects to using start.spring.io.
+
+- Tools and Technologies Discussion
+  - Debate and preference between Maven and Gradle.
+
+- Engagement with Udani
+  - Anticipation of showing metrics, memory view, and application connectivity.
+  - Acknowledgment of Udani's actuator demonstration.
+
+- Community Engagement
+  - Sharing features with .NET colleagues.
+
+- Technical Demonstrations
+  - The power and efficiency of hot code debugging.
+  - Exploration of Tansu dev tools in Kubernetes clusters for live views.
+  - Process and methods for telemetry addition.
+  - Live debugging capabilities on Kubernetes.
+
+- Migration Process
+  - Live migration, contrasting with Udani's demonstration.
+
+- Upgrades and Best Practices
+  - Upgrading to Spring Boot 3.1.2.
+  - Emphasis on configuration best practices.
+  - Patching approach for files.
+
+- Deployment Strategy
+  - Committing changes and integrating with source control.
+  - Use of GitHub Copilot for CI/CD setup.
+  - Build and deployment process elucidation.
