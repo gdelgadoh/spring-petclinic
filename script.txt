@@ -73,7 +73,7 @@ Rory Preddy's Talking Points:
   - Acknowledgment of Udani's actuator demonstration.
 
 - Community Engagement
-  - Sharing features with .NET colleagues.
+  - Bragging about Novel features of Spring exention to .NET colleagues.
 
 - Technical Demonstrations
   - The power and efficiency of hot code debugging.
