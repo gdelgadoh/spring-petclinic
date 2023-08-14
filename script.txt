@@ -47,6 +47,7 @@ Outer Loop Demo
 
 -Q&A
 
+
 Rory Preddy's Talking Points:
 
 - Introduction
@@ -55,7 +56,57 @@ Rory Preddy's Talking Points:
   - Presentation focus: tools, tips, and tricks.
 
 - Special Promotions
-  - Mention of a golden ticket and nightclub booking.
+  - Mention of a golden ticket and nightclub
+
+Udayani’s Talking Points:
+
+Introduction:
+•	Introduce yourself and your role at VMware's Spring Tools team.
+•	Mention that you're joined by Rory.
+•	Mention Rory's surprise announcement at the end.
+
+Setting the Stage:
+•	Highlight the exciting features and capabilities for building Java and Spring Boot applications in Visual Studio Code (VS Code).
+•	Emphasize that the focus will be on live demonstrations to showcase the tools in action.
+
+Why VS Code:
+•	Explain the advantages of using Visual Studio Code as an editor-centric environment that enhances code creation experience.
+•	Mention its lightweight nature, quick start-up times, and responsiveness, making it user-friendly.
+•	Note its evolution from a web development tool to support various languages through extensions.
+
+Spring Tooling Extension Pack:
+•	Introduce the Visual Studio Code extension pack specifically tailored for Spring Boot development.
+•	Highlight the extensions included, such as Spring Initializer, Spring Tools, and Spring Boot Dashboard.
+
+Demo Plan Overview:
+•	Outline the structure of the demo, focusing on the inner loop scenario.
+•	Mention that the goal is to showcase the power of tooling to develop, debug, and test applications.
+
+Live Coding and Debugging:
+•	Walk the audience through the process of creating a Spring Boot project using Spring Initializer.
+•	Showcase how to start the application in debug mode within VS Code.
+•	Demonstrate the convenience of hot code replacement, which allows for seamless debugging without application restarts.
+•	Showcase the Spring Boot Dashboard's visualization of live information from the application.
+
+Interaction with Rory:
+•	Ask Rory to share his experience with creating spring boot projects
+•	Engage Rory while showing the live metrics for APIs, memory view
+
+JUnit Testing and Code Analysis:
+•	Explain how VS Code supports running JUnit test cases.
+
+Code Analysis and Validation:
+•	Discuss code analysis and validation features that help ensure code quality and adherence to Spring coding standards.
+•	Summarize the inner-loop journey: streamlined project generation, efficient development, debugging, testing, and validations.
+
+Transition to Rory:
+•	Transition to the next part of the presentation, where Rory will take over to discuss outer-loop scenarios.
+
+Wrap-up:
+•	Thank the audience for their time and attention.
+•	Encourage attendees to check out the provided links for more information and resources.
+•	Mention about “Meet the Experts” session 
+king.
 
 - DevOps Role and Responsibilities
   - Tasks: Monitor, Migrate, and Deploy.
