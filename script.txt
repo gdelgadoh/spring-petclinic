@@ -47,17 +47,6 @@ Outer Loop Demo
 
 -Q&A
 
-
-Rory Preddy's Talking Points:
-
-- Introduction
-  - Based in Johannesburg.
-  - Role as a Principal Cloud Advocate.
-  - Presentation focus: tools, tips, and tricks.
-
-- Special Promotions
-  - Mention of a golden ticket and nightclub
-
 Udayani’s Talking Points:
 
 Introduction:
@@ -108,6 +97,16 @@ Wrap-up:
 •	Mention about “Meet the Experts” session 
 king.
 
+Rory Preddy's Talking Points:
+
+- Introduction
+  - Based in Johannesburg.
+  - Role as a Principal Cloud Advocate.
+  - Presentation focus: tools, tips, and tricks.
+
+- Special Promotions
+  - Mention of a golden ticket and nightclub
+  
 - DevOps Role and Responsibilities
   - Tasks: Monitor, Migrate, and Deploy.
   - Utilization of GitHub actions and buildpacks.io.
