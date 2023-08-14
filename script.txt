@@ -47,13 +47,6 @@ Outer Loop Demo
 
 -Q&A
 
-Appendix:
-To create an Azure User for the action:
-  - `az ad sp create-for-rbac --name springone --role contributor --scopes /subscriptions/<your sub>/resourceGroups/springoneent --sdk-auth`
-Extension
-https://network.tanzu.vmware.com/products/tanzu-java-azure-buildpack
-
-
 Rory Preddy's Talking Points:
 
 - Introduction
@@ -100,3 +93,9 @@ Rory Preddy's Talking Points:
   - Committing changes and integrating with source control.
   - Use of GitHub Copilot for CI/CD setup.
   - Build and deployment process elucidation.
+
+Appendix:
+To create an Azure User for the action:
+  - `az ad sp create-for-rbac --name springone --role contributor --scopes /subscriptions/<your sub>/resourceGroups/springoneent --sdk-auth`
+Extension
+https://network.tanzu.vmware.com/products/tanzu-java-azure-buildpack
